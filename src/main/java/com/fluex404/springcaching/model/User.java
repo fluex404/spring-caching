@@ -1,21 +1,30 @@
 package com.fluex404.springcaching.model;
 
 public class User {
-    private String username;
+    private Integer id;
+    private String name;
     private Integer age;
 
-
-    public User(String username, Integer age) {
-        this.username = username;
+    public User(Integer id, String name, Integer age) {
+        this.id = id;
+        this.name = name;
         this.age = age;
     }
 
-    public String getUsername() {
-        return username;
+    public Integer getId() {
+        return id;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public Integer getAge() {
